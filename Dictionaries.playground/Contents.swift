@@ -17,6 +17,13 @@ if let definition = definition {
     print("'rigmarole' isn't a word!")
 }
 
+if let definition = favoriteWords["rigmarole"] {
+    print("The definition of 'rigmarole' is '\(definition)'")
+} else {
+    print("'rigmarole' isn't a word!")
+} //you can unwap a dictionary in an optional binding
+
+
 if let definition = nonexistentDefinition {
     print("The definition of 'strategery' is '\(definition)'")
 } else {
